@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
-#./auto_ipa.py -p youproject.xcodeproj -s youproject -o ~/Desktop/youproject.ipa
+#./adhoc_auto_ipa.py -p youproject.xcodeproj -s youproject -o ~/Desktop/youproject.ipa
 
-#./auto_ipa.py -w youproject.xcworkspace -s youproject -o ~/Desktop/youproject.ipa
+#./adhoc_auto_ipa.py -w youproject.xcworkspace -s youproject -o ~/Desktop/youproject.ipa
 
 from optparse import OptionParser
 import subprocess
@@ -19,7 +19,6 @@ CODE_SIGN_IDENTITY = "iPhone Distribution: xxxxx(xxxxxx)"
 ADHOC_PROVISIONING_PROFILE = "xxxx-xxxxx-xxxx-xxxx-xxxxx"
 APPSTORE_PROVISIONING_PROFILE = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 ADHOCPath = "AdHocExportOptions.plist"
-PROVISIONING_PROFILE = "xxx"
 CONFIGURATION = "Release"
 SDK = "iphoneos"
 
